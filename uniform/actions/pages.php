@@ -12,6 +12,7 @@ uniform::$actions['pages'] = function ($form, $actionOptions) {
 	// the only option is to define what template, default = 'pages'
     $options = [
         'template' => a::get($actionOptions, 'template', 'pages'),
+        'parent' => a::get($actionOptions, 'parent', 'form'),
     ];
 
 	// add some extra contextual info
@@ -28,7 +29,7 @@ uniform::$actions['pages'] = function ($form, $actionOptions) {
 	}
 
 	$newname = 'entry' . date('c');
-	$success = page('form')->children()->create($newname, 'entry', $data);
+	$success = page($options['parent'])->children()->create($newname, $options['template'], $data);
 
 	if ($success === false)
 	{
