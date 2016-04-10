@@ -13,7 +13,7 @@ Builtin actions:
 - [log](https://github.com/mzur/kirby-contact-form/wiki/Action:-Log): Log the form data to a file.
 - [login](https://github.com/mzur/kirby-uniform/wiki/Action:-Login): Log in to the Kirby frontend.
 - [webhook](https://github.com/mzur/kirby-uniform/wiki/Action:-Webhook): Send the form data as a HTTP request to a webhook.
-- [pages](https://github.com/tobystokes/kirby-uniform/wiki/Action:-pages): Send the form data as a HTTP request to a webhook.
+- [pages](https://github.com/tobystokes/kirby-uniform/wiki/Action:-pages): Save as a kirby child page.
 
 ## Installation
 
