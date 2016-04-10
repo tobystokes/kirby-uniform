@@ -20,6 +20,7 @@ function uniform($id, $options = [])
     require_once __DIR__.DS.'actions'.DS.'log.php';
     require_once __DIR__.DS.'actions'.DS.'login.php';
     require_once __DIR__.DS.'actions'.DS.'webhook.php';
+    require_once __DIR__.DS.'actions'.DS.'pages.php';
 
     require_once __DIR__.DS.'guards'.DS.'honeypot.php';
     require_once __DIR__.DS.'guards'.DS.'calc.php';
